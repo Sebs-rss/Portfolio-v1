@@ -1,0 +1,159 @@
+@use "../abstracts/variables";
+
+.main {
+    &__container {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5%;
+    }
+
+    &__img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /*width: 100%;*/
+    }
+
+    &__title {
+        color: variables.$mydark;
+    }
+
+    &__subtitle {
+        color: variables.$mysecondary;
+    }
+
+}
+
+
+
+.about {
+    &__text {
+        display: flex;
+        width: 100%;
+        font-size: 1.20rem;
+        margin-top: 8px;
+    }
+}
+
+.section {
+    &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: auto;
+    background-color: variables.$mywhitebg;
+
+    &--form {
+        background-color: $mysecondary;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    
+        &--form {
+            color: white;
+        }
+    
+    }
+    
+    &__subtitle {
+        margin-top: 0.5rem;
+        margin-bottom: 0.75rem;
+        width: 100%;
+        text-align: center;
+        font-size: 1.20rem;
+        font-weight: 350;
+    
+    }
+}
+
+.stack-tech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem 0;
+
+    &__subcontainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+        
+        &--html {
+            color: #e44d26;
+        }
+
+        &--css {
+            color: #379AD6;
+        }
+
+        &--saas {
+            color: #CD669A;
+        }
+        
+        &--bootstrap {
+            color: #533B78;
+        }
+
+        &--git {
+            color: #F05030;
+        }
+        
+        &--github {
+            color: black;
+        }
+
+        &--js {
+            color: #E8D44D;
+        }
+
+        &--vue {
+            color: #3FB27F;
+        }
+
+    }
+
+    &__tag {
+        font-size: 1rem;
+        font-weight: 500;
+        color: variables.$mydark;
+    }
+}
+
+.mytabs {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        
+    }
+
+    }

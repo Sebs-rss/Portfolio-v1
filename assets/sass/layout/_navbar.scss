@@ -1,0 +1,32 @@
+@use "../abstracts/variables";
+
+
+.mynavbar {
+    background-color: variables.$myprimary;
+    padding: 0 !important;
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    }
+
+    &__item {
+        color:white;
+    &:hover {
+        color: variables.$myyellow;
+        font-weight: bold;
+        text-decoration: underline;
+        }
+
+    &:active {
+        color: variables.$myhighlight;
+        font-weight: bold;
+        text-decoration: underline;
+        }
+    &.current {
+        font-weight: bold;
+        }
+}
+}

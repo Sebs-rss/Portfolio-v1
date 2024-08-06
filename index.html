@@ -22,28 +22,357 @@ color: #DD4B25;
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Registro - Blog FrontEnd</title>
-</head>
-<body>
-    <div class="registration-container">
-        <header class="header">
-            <img src="assets/img/logos/adl.png" alt="Blog FrontEnd Logo" class="header__logo">
-            <h1 class="header__title">Blog FrontEnd</h1>
-        </header>
-        <main class="main">
-            <h2 class="main__title">Regístrate ¡Es gratis!</h2>
-    
-            
-        </main>
-    </div>
-    <script src="assets/js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Para íconos de Fontwaresome -->
+    <script
+      src="https://kit.fontawesome.com/da377f274a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio v1</title>
+  </head>
+  <body class="body">
+    <!-- Navbar inicio -->
+    <nav
+      class="navbar navbar-expand-lg mynavbar fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand mynavbar__title" href="#">Sebas💡</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link mynavbar__item" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mynavbar__item" href="#habilidades"
+                >Mis habilidades</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mynavbar__item" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mynavbar__item" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar fin -->
+    <main>
+      <div class="main__container col-12 col-md-6 gap-4 pt-5">
+        <div class="col-12 col-lg-4">
+          <img class="main__img" src="assets/img/main_imgv2.svg" />
+        </div>
+        <div class="main__about col-10 col-lg-5">
+          <h1 class="main__title">Soy Sebastián Sánchez</h1>
+          <h3 class="main__subtitle">
+            Diseñador UX/UI y desarrollador Front-End
+          </h3>
+          <p class="about__text">
+            Diseñador UX/UI generalista con visión holística y conocimientos de
+            Front End. Experimentado en información y comunicaciones en
+            proyectos digitales.<br />
+            Facilitador entre personas y equipos ágiles multidisciplinarios, en
+            español e inglés.
+          </p>
+          <a
+            type="button"
+            class="btn btn-primary mybutton__primary mybutton__primary--xl mybutton__primary--light col-12 col-md-4"
+            href="#contacto"
+          >
+            Contáctame
+          </a>
+        </div>
+      </div>
+    </main>
+    <section class="section__container col-10 col-lg-5" id="habilidades">
+      <h2 class="section__title">Mis habilidades</h2>
+      <span class="section__subtitle"
+        >Aquí algo del <b>stack tecnológico</b> que uso (aunque siempre estoy
+        aprendiendo algo nuevo).</span
+      >
+
+      <!-- Habilidades en pills -->
+      <div class="mytabs__container col-12">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-front-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-front"
+              type="button"
+              role="tab"
+              aria-controls="pills-front"
+              aria-selected="true"
+            >
+              Front-end
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-uxui-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-uxui"
+              type="button"
+              role="tab"
+              aria-controls="pills-uxui"
+              aria-selected="false"
+            >
+              Diseño UX/UI
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-foto-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-foto"
+              type="button"
+              role="tab"
+              aria-controls="pills-foto"
+              aria-selected="false"
+            >
+              Foto y +
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+        <!-- Contenido de Tab 1 - Front-End - inicio -->
+        <div
+            class="tab-pane fade show active"
+            id="pills-front"
+            role="tabpanel"
+            aria-labelledby="pills-front-tab"
+            tabindex="0"
+          >
+            <!-- Stack tecnológico - orig -->
+            <div class="stack-tech gap-4 col-10 col-lg-5">
+              <div class="stack-tech__subcontainer">
+                <i
+                  class="fa-brands fa-html5 stack-tech__icon stack-tech__icon--html"
+                ></i>
+                <span class="stack-tech__tag">HTML</span>
+              </div>
+              <div class="stack-tech__subcontainer">
+                <i
+                  class="fa-brands fa-css3-alt stack-tech__icon stack-tech__icon--css"
+                ></i>
+                <span class="stack-tech__tag">CSS</span>
+              </div>
+              <div class="stack-tech__subcontainer">
+                <i
+                  class="fa-brands fa-sass stack-tech__icon stack-tech__icon--saas"
+                ></i>
+                <span class="stack-tech__tag">Saas</span>
+              </div>
+              <div class="stack-tech__subcontainer">
+                <i
+                  class="fa-brands fa-bootstrap stack-tech__icon stack-tech__icon--bootstrap"
+                ></i>
+                <span class="stack-tech__tag">Bootstrap</span>
+              </div>
+              <div class="stack-tech__subcontainer">
+                <i
+                  class="fa-brands fa-git-alt stack-tech__icon stack-tech__icon--git"
+                ></i>
+                <span class="stack-tech__tag">Git</span>
+              </div>
+              <div class="stack-tech__subcontainer">
+                <i
+                  class="fa-brands fa-github stack-tech__icon stack-tech__icon--github"
+                ></i>
+                <span class="stack-tech__tag">GitHub</span>
+              </div>
+              <div class="stack-tech__subcontainer">
+                <i
+                  class="fa-brands fa-square-js stack-tech__icon stack-tech__icon--js"
+                ></i>
+                <span class="stack-tech__tag">JavaScript</span>
+              </div>
+              <div class="stack-tech__subcontainer">
+                <i
+                  class="fa-brands fa-vuejs stack-tech__icon stack-tech__icon--vue"
+                ></i>
+                <span class="stack-tech__tag">Vue</span>
+              </div>
+            </div>
+            <!-- Contenido de Tab 1 - Front-End - fin -->
+            <!-- Contenido de Tab 2 - UX/UI - inicio -->
+            <div
+            class="tab-pane fade"
+            id="pills-uxui"
+            role="tabpanel"
+            aria-labelledby="pills-uxui-tab"
+            tabindex="0"
+          >
+            <!-- Stack tecnológico - orig -->
+                <div class="stack-tech gap-4 col-10 col-lg-5">
+                    <div class="stack-tech__subcontainer">
+                        <i
+                        class="fa-brands fa-html5 stack-tech__icon stack-tech__icon--html"
+                        ></i>
+                        <span class="stack-tech__tag">HTML</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Contenido de Tab 2 - UX/UI - fin -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__container" id="proyectos">
+      <h2 class="section__title">Mis proyectos</h2>
+      <!-- Cards con hover y efecto zoom  -->
+      <div class="cards-block col-12">
+        <!-- Una card -->
+        <div
+          class="card col-3 col-lg-3"
+          style="width: 18rem; border-radius: 10px"
+        >
+          <img
+            src="./assets/img/proyectos/viajes_Chile.png"
+            class="card-img-top h-100"
+            alt="proyecto viajes Chile, agencia de viajes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Landing de agencia de viajes</h5>
+            <p class="card-text">
+              Una nueva web para Viajes Chile, con estilo renovado.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Ir al proyecto</a>
+          </div>
+        </div>
+        <!-- Una card -->
+        <div class="card" style="width: 18rem; border-radius: 10px">
+          <img
+            src="./assets/img/proyectos/olivia.png"
+            class="card-img-top h-100"
+            alt="proyecto viajes Chile, agencia de viajes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Blog personal</h5>
+            <p class="card-text">
+              Una web personal para Olivia, fotógrafa y exploradora culinaria.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Ir al proyecto</a>
+          </div>
+        </div>
+        <!-- Una card -->
+        <div class="card" style="width: 18rem; border-radius: 10px">
+          <img
+            src="./assets/img/proyectos/blog.png"
+            class="card-img-top h-100"
+            alt="proyecto viajes Chile, agencia de viajes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Blog Front-end</h5>
+            <p class="card-text">
+              Una web personal para Olivia, fotógrafa y exploradora culinaria.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Ir al proyecto</a>
+          </div>
+        </div>
+        <!-- Una card -->
+        <div class="card" style="width: 18rem; border-radius: 10px">
+          <img
+            src="./assets/img/proyectos/recetas.png"
+            class="card-img-top h-100"
+            alt="proyecto viajes Chile, agencia de viajes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Recetas</h5>
+            <p class="card-text">
+              Una web minimalista para difundir las mejores recetas locales.
+            </p>
+            <a href="#" class="btn btn-outline-primary">Ir al proyecto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section__container section__container--form col-12"
+      id="contacto"
+    >
+      <h2 class="section__title section__title--form">Contáctame</h2>
+      <!-- Formulario de contacto -->
+      <div class="contact__row col-12">
+        <form class="form__container col-12 col-md-6">
+          <div class="form__subcontainer">
+            <!-- <label for="input-nombre" class="form-label">Nombre</label> -->
+            <input
+              type="text"
+              class="form-control"
+              id="input-nombre"
+              placeholder="Nombre"
+            />
+            <input
+              type="text"
+              class="form-control"
+              rows="3"
+              placeholder="Apellido"
+            />
+          </div>
+          <input type="email" class="form-control" placeholder="Email" />
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Dime..."
+          ></textarea>
+          <button
+            type="submit"
+            class="btn btn-outline-primary mybutton__secondary col-12 col-md-4"
+          >
+            Enviar
+          </button>
+        </form>
+        <div class="contact__container col-12 col-md-6">
+          <div class="contact__subcontainer">
+            <i
+              class="fa-solid fa-mobile-screen contact__subcontainer--icon"
+            ></i>
+            <span class="contact__subcontainer--text">+56 9 3667 4536</span>
+          </div>
+          <div class="contact__subcontainer">
+            <i class="fa-regular fa-envelope contact__subcontainer--icon"></i>
+            <span class="contact__subcontainer--text"
+              >seba.r.sanchez@gmail.com</span
+            >
+          </div>
+          <div class="contact__subcontainer">
+            <i class="fa-brands fa-linkedin contact__subcontainer--icon"></i>
+            <span class="contact__subcontainer--text">in/sebsanchezcl/</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/main.js" type="module"></script>
+  </body>
 </html>

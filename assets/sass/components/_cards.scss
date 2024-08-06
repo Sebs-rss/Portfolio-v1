@@ -1,0 +1,27 @@
+@use "../abstracts/variables";
+
+.cards-block {
+    display:flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: variables.$mywhitebg;
+
+}
+
+.card {
+    transition: all 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.07), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02);
+}
+
+/*.mycard {
+    &__img {
+        height: 100px;
+        aspect-ratio: 16/9;
+}
+}*/

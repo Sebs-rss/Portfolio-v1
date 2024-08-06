@@ -1,0 +1,8 @@
+@use "../abstracts/variables";
+
+.mypill {
+    &__item {
+        background-color: variables.$mysecondary;
+        border-radius: 8px;
+    }
+}

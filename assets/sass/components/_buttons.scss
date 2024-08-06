@@ -1,0 +1,55 @@
+@use "../abstracts/variables";
+
+.mybutton {
+    &__primary {
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        justify-content: center;
+        
+        &--xl {
+            font-size: 1.25rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        &--light {
+            background-color: variables.$myprimary;
+            border-color: variables.$mysecondary;
+            font-weight: 450;
+            color: white
+        }
+
+        &:hover {
+            background-color: variables.$myyellow;
+            color: variables.$mydark;
+            border-color: variables.$mydark;
+            font-weight: 500;
+            box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.07), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02);
+        }
+
+    }
+
+    &__secondary {
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        justify-content: center;
+        border-color: white;
+        border: solid 2px;
+        font-weight: 450;
+        color: white;
+        font-size: 1.25rem;
+        Box-shadow: 0px -8px 80px 0px rgba(0, 0, 0, 0.07), 0px -3.342px 33.422px 0px rgba(0, 0, 0, 0.05), 0px -1.787px 17.869px 0px rgba(0, 0, 0, 0.04), 0px -1.002px 10.017px 0px rgba(0, 0, 0, 0.04), 0px -0.532px 5.32px 0px rgba(0, 0, 0, 0.03), 0px -0.221px 2.214px 0px rgba(0, 0, 0, 0.02);
+    
+    &:hover {
+        background-color: variables.$myyellow;
+            color: variables.$mydark;
+            border-color: variables.$mydark;
+            font-weight: 500;
+            box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.07), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02)
+    }
+
+    }
+    
+}
